@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.css-5xe99f-MuiLinearProgress-bar1{
+  background-color: #0a1929 !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* custom loader */
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 25px;
+  height: 100vh;
+}
+
+.loader span{
+  width: 30px;
+  height: 30px;
+  animation: up 0.9s infinite cubic-bezier(0.41, 0.02, 0, 1.15);
+}
+.circle{
+  border-radius: 50%;
+  background-color: #EDC240;
+}
+
+.triangle{
+  width: 0px; 
+  height: 0px; 
+  border-left: 20px solid transparent !important;
+  border-right: 20px solid transparent !important;
+  border-bottom: 30px solid #284D4D;
+  animation-delay: 0.2s !important;
+}
+
+
+.sqaure{
+  background-color:#DE4F2E;
+  animation-delay: 0.5s !important;
+}
+
+@keyframes up {
+  0%{
+      transform: translateY(0px);
+  }
+  50%{
+      transform: translateY(-15px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
